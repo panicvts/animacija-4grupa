@@ -1,0 +1,41 @@
+.bus{
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    
+    position: absolute;
+    top: 150px;
+    left: 20px;
+
+    background-image: url('bus.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    animation-name: autobus;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.zgrada{
+    width: 500px;
+    position: absolute;
+    right: 20px;
+}
+
+@keyframes autobus {
+
+    99%{
+        left: 1300px;
+        top: 150px;
+        width: 250px;
+        height: 250px;
+        background-image: url('bus.png');
+    }
+    100%{
+        top: 20px;
+        left: 1310px;
+        background-image: url('crash.png');
+        width: 500px;
+        height: 500px;
+    }
+}
